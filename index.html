@@ -5,48 +5,39 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content= 
           "width=device-width, initial-scale=1.0"> 
-    <title>Responsive Inline Form</title> 
+    <title>registration form</title> 
+    <!-- <link rel="stylesheet" href="./src/style.css"> -->
 </head> 
   
 <body> 
-    <div class="form"> 
-        <div class="title-container">
-            <h2>Where does it come from? Why do we use it?</h2>
-        </div> 
-        <div class="main-form-container">
-            <div class="p-container">
-                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                </p>
-            </div>
-            <form class="form-container"> 
-                <div class="form-container-input">
-                    <input type="text" 
-                       id="departDate" 
-                       name="departDate" 
-                       placeholder="Depart date"
-                       class="form-container-input" required> 
-      
-     
-                <input type="text" 
-                       id="returnDate" 
-                       name="returnDate" 
-                       placeholder="Return date" 
-                       class="form-container-input"
-                       required> 
+    <div class="form-container"> 
+        <h2>Регистрация</h2>
+            <form class="" autocomplete="off"> 
+                <div class="input-container">
+                    <input required name="firstName" type="text" id="first-name" class="" placeholder="Имя">
                 </div>
-                <div class="form-container-button">
-                    <button type="submit" 
-                    class="form-container-button"> 
-                  SEARCH
-              </button>
+                <div class="input-container">
+                    <input required name="lastName" type="text" id="last-name" class="" placeholder="Фамилия">
                 </div>
-      
-                 
-            </form> 
-        </div>
-          
-
-        
+                <div class="input-container">
+                    <input type="email" required name="email"  id="email" class="" placeholder="Электронная почта">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="password" required name="password"  class="" placeholder="Пароль">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="password-confirm" required name="confirmPassword" class="" placeholder="Подтверждение пароля">
+                </div>
+                <div class="input-container birthday-container">
+                    <label for="birth-day">Дата рождения</label>
+                    <input type="date" id="birth-day" name="birthDay" required class="" min="1900-01-01" max="2024-06-10" >
+                    
+                </div>
+                <div class="btn-container">
+                    <button type="submit" >Зарегистрироваться</button>
+                </div>
+            </form>
+            <p class="feedback"></p>  
     </div> 
 </body> 
   

@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(227, 227, 252);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(58, 58, 135);
+}
+.form-container {
+    width: 350px;
+    flex:60%;
+    border: 2px solid black;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 4%;
+    border: 2px solid rgb(58, 58, 135);
+    box-shadow: 0 0 10px #bba9f5;
+    border-radius: 15px;
+}
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgb(92, 92, 151);
+    padding-left: 5%;
+    padding-right: 2%;
+    color: rgb(58, 58, 135);;
+}
+.input-container {
+    margin-bottom: 3%;
+    /* transition: background-color 0.2s ease; */
+    flex: 100%;
+    display: flex;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input:hover,
+input:focus {
+    border: 2px solid rgb(58, 58, 135);
+    outline: rgb(58, 58, 135);
+    box-shadow: 0 0 10px #bba9f5;
+}
+button {
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(58, 58, 135);
+    border: none;
+}
+button:hover,
+button:focus {
+    background-color: rgb(95, 95, 155);
+}
+.btn-container {
+    margin-bottom: 3%;
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #bba9f5;
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input.valid {
+    background-color: rgb(242, 242, 252);
+}
+input.invalid {
+    border: 2px solid rgb(178, 45, 12);
+    background-color: #ffa4a4;
+}
+.birthday-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+label {
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+#birth-day {
+    width:92%;
+}
+p.feedback {
+    color:rgb(178, 45, 12);
+}
+
+input[type="date"]::-webkit-datetime-edit-text { color: rgb(58, 58, 135); padding: 0 0.3em; }
+input[type="date"]::-webkit-datetime-edit-month-field { color: rgb(58, 58, 135); 
+    text-transform: uppercase;}
+input[type="date"]::-webkit-datetime-edit-day-field { color: rgb(58, 58, 135); text-transform: uppercase;}
+input[type="date"]::-webkit-datetime-edit-year-field { color: rgb(58, 58, 135); text-transform: uppercase;}
+input[type="date"]::-webkit-inner-spin-button { display: none; }
